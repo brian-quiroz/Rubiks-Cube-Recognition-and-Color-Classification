@@ -262,26 +262,6 @@ function [c1,c2,c3,c4,mse] = detectCorners(n,max_len,lens,thetas,rhos,x1s,y1s,x2
     mse = (errl1^2  + errl2^2 + errl3^2 + errl4^2);
 end
 
-function plotCorners(I, preRotI, c1, c2, c3, c4, n)
-    [rows, columns, numberOfColorChannels] = size(I);
-    Xc = columns / 2;
-    Yc = rows / 2;
-    
-    X = [c1(1) c2(1) c3(1) c4(1)];
-    Y = [c1(2) c2(2) c3(2) c4(2)];
-    
-    ang  = -33;
-    Xrot =  (X-Xc)*cosd(ang) + (Y-Yc)*sind(ang) + Xc;
-    Yrot = -(X-Xc)*sind(ang) + (Y-Yc)*cosd(ang) + Yc;
-    
-    subplot(2,3,n), imshow(preRotI), title("Image " + int2str(n)), hold on
-    xy = [Xrot ; Yrot];
-    plot(xy(1,1),xy(2,1),'x','LineWidth',10,'Color','yellow');
-    plot(xy(1,2),xy(2,2),'x','LineWidth',10,'Color','red');
-    plot(xy(1,3),xy(2,3),'x','LineWidth',10,'Color','blue');
-    plot(xy(1,4),xy(2,4),'x','LineWidth',10,'Color','green');  
-end
-
 function findROIs(I, preRotI, c1, c2, c3, c4, n)
     [rows, columns, numberOfColorChannels] = size(I);
     Xc = columns / 2;
