@@ -1,4 +1,4 @@
-function CubeEdgeDetection()
+function CVRubiksCube()
     test('color-all', 0.25);
     run(1, 0, 0.25);
 end
