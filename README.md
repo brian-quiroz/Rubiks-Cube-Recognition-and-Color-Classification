@@ -1,8 +1,6 @@
 # Computer-Vision-Rubiks-Cube
 Object Recognition and Color Classification for Solving a Rubik’s Cube
 
-Instructions:
-
 ## CVRubiksCube:
 - The program should be run in the MATLAB application, not on the terminal.
 - By default, all tests and a sample "proper" run are ran.
