@@ -1,5 +1,8 @@
 # Computer-Vision-Rubiks-Cube
-Object Recognition and Color Classification for Solving a Rubik’s Cube
+Rubik's Cube Recognition and Color Classification
+
+## Detailed Explanation of Algorithm:
+- You can find a detailed explanation of the algorithm in the paper I wrote "Rubik's Cube Recognition and Color Classification" available as a PDF in the repository. Below I will explain why each of the other files in this repository were included.
 
 ## CVRubiksCube:
 - The program should be run in the MATLAB application, not on the terminal.
