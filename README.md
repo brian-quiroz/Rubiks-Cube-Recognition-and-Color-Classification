@@ -1,5 +1,4 @@
-# Computer-Vision-Rubiks-Cube
-Rubik's Cube Recognition and Color Classification
+# Rubik's Cube Recognition and Color Classification
 
 ## Detailed Explanation of Algorithm:
 - You can find a detailed explanation of the algorithm in the paper I wrote "Rubik's Cube Recognition and Color Classification" available as a PDF in the repository. Below I will explain why each of the other files in this repository were included.
